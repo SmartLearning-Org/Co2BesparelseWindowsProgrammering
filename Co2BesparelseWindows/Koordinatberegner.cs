@@ -26,8 +26,8 @@ namespace Co2BesparelseWindows
         /// 
         /// Konverterer en adresse til et sæt GPS-koordinater
         /// </summary>
-        /// <param name="adresse">Den adresse, der skal konverteres (fx Nansgaden 19 København)</param>
-        /// <returns>Adressens koordinatsæt</returns>
+        /// <param name="adresse">Den adresse, der skal konverteres (fx Nansensgade 19 København)</param>
+        /// <returns>Adressens koordinatsæt som et objekt af typen Koordinatset</returns>
         public async Task<Koordinatset> HentKoordinaterForAdresse(string adresse)
         {
             return await AfstandService.AdresseTilKoordinater(key, adresse);            
